@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header {
+    font-size: 3rem;
+    margin: 0;
+    color: white;
+}
+
+.h2 {
+    font-size: 1.5rem;
+    color: yellow;
+}
+
+.h3{
+    font-size: 1rem;
+    color: white;
+    padding-top: 40px;
+}
+
+#clock-container {
+    margin: 20px 0;
+}
+
+#clock {
+    font-size: 4rem;
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    color: lightgreen;
+    border: 2px solid white;
+}
+
+#setHr, #setMin, #setAMPM{
+    color: #333; 
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Removes the default dropdown arrow for custom styling */
+    outline: none;
+    cursor: pointer;
+}
+#setHr:hover, #setMin:hover, #setAMPM:hover,
+#setHr:focus, #setMin:focus, #setAMPM:focus {
+    border-color: #007bff; /* Blue border on hover/focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Slight shadow for focus */
+}
+/* Custom arrow for dropdown */
+#setHr::after, #setMin::after, #setAMPM::after {
+    content: '\25BC'; /* Unicode for the down arrow */
+    float: right;
+    margin-left: 10px;
+    color: #007bff; /* Blue arrow */
+}
+
+
+#AlarmValue{
+    font-size: 1.5rem;
+    background-color: black;
+    padding: 20px;
+    display: inline-block;
+    color: lightgreen;
+
+}
+
+#button{
+    color: blue;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Aligns buttons horizontally in the center */
+    gap: 10px; /* Adds space between the buttons */
+}
+
+#setAlarmButton, #closeAlarmButton {
+    color: blue;
+    padding: 10px;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
